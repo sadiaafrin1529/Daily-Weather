@@ -26,6 +26,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  background-color: white;
   & #city-input {
     /* border: none; */
     padding: 10px;

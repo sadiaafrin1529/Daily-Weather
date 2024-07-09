@@ -19,7 +19,7 @@ function getWeatherDetails(name, lat, lon, country) {
             displayCurrentWeather(data);
         })
         .catch(() => {
-            alert('Failed to fetch current weather');
+            // alert('Failed to fetch current weather');
         });
 
     fetch(forecastUrl)
@@ -28,17 +28,16 @@ function getWeatherDetails(name, lat, lon, country) {
             displayForecast(data);
         })
         .catch(() => {
-            alert('Failed to fetch forecast');
+            // alert('Failed to fetch forecast');
         });
 
     fetch(airQualityUrl)
         .then(res => res.json())
         .then(data => {
             displayAirQuality(data);
-            console.log(data);
         })
         .catch(() => {
-            alert('Failed to fetch air quality');
+            // alert('Failed to fetch air quality');
         });
 
     fetch(timezoneUrl)
@@ -47,7 +46,7 @@ function getWeatherDetails(name, lat, lon, country) {
             displaySunriseSunset(data);
         })
         .catch(() => {
-            alert('Failed to fetch timezone info');
+            // alert('Failed to fetch timezone info');
         });
 
     fetch(weatherApiUrl)
@@ -56,7 +55,7 @@ function getWeatherDetails(name, lat, lon, country) {
             displayWeatherDetails(data);
         })
         .catch(() => {
-            alert('Failed to fetch weather details');
+            // alert('Failed to fetch weather details');
         });
 }
 
